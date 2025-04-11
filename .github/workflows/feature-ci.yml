@@ -3,7 +3,7 @@ Name: Feature CICD Development
 on:
   push:
     branches:
-      - "feature/**"
+      - "feature/*"
 
 jobs:
   ci:
