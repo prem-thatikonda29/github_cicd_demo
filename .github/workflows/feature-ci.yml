@@ -1,0 +1,18 @@
+Name: Feature CICD Development
+
+on:
+  push:
+    branches:
+      - "feature/**"
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: runtest
+        run: echo "Running on the feature branch"
+
+      - name: deploy
+        run: echo "Deploying onto the feature branch"
